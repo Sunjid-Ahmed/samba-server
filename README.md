@@ -1,74 +1,63 @@
 # 📦 Samba Server Manager
 
-A Bash-based GUI tool to simplify Samba server configuration and management on Linux systems. Built using **Zenity**, this project provides an interactive interface for managing file shares, users, services, and automated backups without manually editing configuration files.
+![Samba Server Manager UI](assets/samba-ui.png)
+
+![License](https://img.shields.io/badge/License-MIT-green)
+![Bash](https://img.shields.io/badge/Bash-Script-blue)
+![Platform](https://img.shields.io/badge/Platform-Linux-orange)
+
+A Bash-based GUI tool that simplifies Samba server configuration and management on Linux systems. Built with **Zenity**, it allows you to manage shares, users, services, and backups without manually editing configuration files.
 
 ---
 
 ## 🚀 Features
 
-### 🔧 Installation
+* 🔧 **One-click Installation**
+  Automatically installs required packages and prepares the environment
 
-* One-click setup for required packages:
+* 📁 **Share Management**
+  Create, view, and delete Samba shares (public & private)
 
-  * `samba`
-  * `zenity`
-  * `inotify-tools`
-* Automatically prepares `/samba` directory and backup storage
+* 👤 **User Management**
+  Add, delete, and list Samba users with validation
 
-### 📁 Share Management
+* ⚙️ **Service Control**
+  Start, stop, and restart Samba services easily
 
-* Create public (no password) or private (password-protected) shares
-* View all user-defined shares
-* Delete shares safely with config backup
+* 🔄 **Auto Backup & Monitoring**
+  Monitor folders in real-time and create automatic backups
 
-### 👤 User Management
+* 🗂️ **Backup Manager**
+  View, inspect, and restore backup files
 
-* Add new Samba users
-* Delete users (including system account removal)
-* List all existing Samba users
+* 📜 **Activity Logging**
+  Track system activities and backup operations
 
-### ⚙️ Service Control
+---
 
-* Start, stop, and restart Samba service (`smbd`)
-* Instant GUI feedback
+## 🖼️ Interface
 
-### 🔄 Auto Backup & Monitoring
-
-* Real-time folder monitoring using `inotify`
-* Automatic `.tar.gz` backups on file changes
-* Background monitoring with PID tracking
-
-### 🗂️ Backup Manager
-
-* View available backup files
-* Inspect backup contents
-* Restore backups to any directory
-
-### 📜 Logging
-
-* Logs all monitored events and backup operations
-* View logs through GUI
+The tool provides a clean, menu-driven GUI using Zenity for easy interaction.
 
 ---
 
 ## ⚙️ How It Works
 
-This script provides a menu-driven GUI that interacts with system-level Samba configurations. It automates tasks like:
-![Samba Server Manager UI](assets/samba-ui.png)
+This script automates Samba administration by interacting directly with system configurations like:
 
-* Editing `/etc/samba/smb.conf`
-* Managing users via `smbpasswd`
-* Handling file permissions and backups
+* `/etc/samba/smb.conf`
+* `smbpasswd` for user management
+* File system permissions and backup handling
 
-All operations are executed securely with root privileges.
+All operations are performed securely with root privileges.
 
 ---
 
 ## 🛠️ Requirements
 
-* Linux (Debian/Ubuntu recommended)
-* Root access (`sudo`)
-* Required packages:
+* Linux (Ubuntu/Debian recommended)
+* Root privileges (`sudo`)
+* Dependencies:
 
   * samba
   * zenity
@@ -89,27 +78,24 @@ sudo ./samba-server.sh
 
 ## 📌 Notes
 
-* Must be run with **root privileges**
+* Must be run with **sudo**
 * Automatically creates:
 
-  * `/samba` (for shares)
-  * `/var/backups/samba` (for backups)
-  * `/var/log/samba_gui.log` (for logs)
+  * `/samba` → shared folders
+  * `/var/backups/samba` → backup storage
+  * `/var/log/samba_gui.log` → logs
+
+---
+
+## 🤖 AI Assistance
+
+This project was developed with assistance from AI tools like Claude and ChatGPT for code generation, debugging, and optimization.
 
 ---
 
 ## ⚠️ Disclaimer
 
-This tool modifies system-level configurations. Use it carefully in production environments. Always keep backups of your Samba configuration before making major changes.
-
----
-
-## 📈 Future Improvements
-
-* Web-based interface
-* Role-based access control
-* Remote server management
-* Backup scheduling options
+This tool modifies system-level configurations. Use it carefully, especially in production environments. Always keep backups before making changes.
 
 ---
 
@@ -118,6 +104,10 @@ This tool modifies system-level configurations. Use it carefully in production e
 **Sunjid Ahmed Siyem**
 Cybersecurity Enthusiast | CSE Student
 
-## 🤖 AI Assistance
+---
 
-This project was developed with assistance from AI tools like Claude and ChatGPT for code generation, debugging, and optimization.
+## ⭐ Support
+
+If you like this project, give it a ⭐ on GitHub!
+
+---
