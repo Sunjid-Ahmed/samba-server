@@ -54,6 +54,7 @@ A Bash-based GUI tool to simplify Samba server configuration and management on L
 ## ⚙️ How It Works
 
 This script provides a menu-driven GUI that interacts with system-level Samba configurations. It automates tasks like:
+![Samba Server Manager UI](assets/samba-ui.png)
 
 * Editing `/etc/samba/smb.conf`
 * Managing users via `smbpasswd`
