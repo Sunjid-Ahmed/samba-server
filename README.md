@@ -117,3 +117,7 @@ This tool modifies system-level configurations. Use it carefully in production e
 
 **Sunjid Ahmed Siyem**
 Cybersecurity Enthusiast | CSE Student
+
+## 🤖 AI Assistance
+
+This project was developed with assistance from AI tools like Claude and ChatGPT for code generation, debugging, and optimization.
