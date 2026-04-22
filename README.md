@@ -88,7 +88,7 @@ sudo ./samba-server.sh
 ## 🤖 AI Assistance
 
 This project was developed with assistance from AI tools like Claude and ChatGPT for code generation, debugging, and optimization.
-
+![AI Assisted](https://img.shields.io/badge/AI-Assisted-blue)
 ---
 
 ## ⚠️ Disclaimer
