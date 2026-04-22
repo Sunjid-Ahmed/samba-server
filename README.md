@@ -1,7 +1,5 @@
 # 📦 Samba Server Manager
 
-![Samba Server Manager UI](assets/samba-ui.png)
-
 ![License](https://img.shields.io/badge/License-MIT-green)
 ![Bash](https://img.shields.io/badge/Bash-Script-blue)
 ![Platform](https://img.shields.io/badge/Platform-Linux-orange)
@@ -38,7 +36,7 @@ A Bash-based GUI tool that simplifies Samba server configuration and management 
 ## 🖼️ Interface
 
 The tool provides a clean, menu-driven GUI using Zenity for easy interaction.
-
+![Samba Server Manager UI](assets/samba-ui.png)
 ---
 
 ## ⚙️ How It Works
